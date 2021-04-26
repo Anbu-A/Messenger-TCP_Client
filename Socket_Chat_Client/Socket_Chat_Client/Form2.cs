@@ -83,8 +83,7 @@ namespace Socket_Chat_Client
                 }
 
                 if (error)
-                {
-                    //Invoke(new MethodInvoker(switch_window));              
+                {              
                     switch_window();
                 }
                 else
