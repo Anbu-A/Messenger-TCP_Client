@@ -1,6 +1,6 @@
 ﻿namespace Socket_Chat_Client
 {
-    partial class Form2
+    partial class Chat_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -50,17 +50,17 @@
             this.textBox2.Size = new System.Drawing.Size(367, 611);
             this.textBox2.TabIndex = 1;
             // 
-            // Form2
+            // Chat_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 662);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Name = "Chat_Form";
+            this.Text = "Chatbox";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Chat_Form_FormClosed);
+            this.Load += new System.EventHandler(this.Chat_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

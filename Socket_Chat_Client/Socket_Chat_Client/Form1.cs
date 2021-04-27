@@ -14,7 +14,7 @@ using System.Net.Sockets;
 
 namespace Socket_Chat_Client
 {
-    public partial class Form1 : Form
+    public partial class Login_Form : Form
     {
         String ip_address;
         int port;
@@ -22,22 +22,22 @@ namespace Socket_Chat_Client
         IPEndPoint ipe;
         String user_name;
         Socket socket = null;
-        Form form = null;
-        public static Form1 instance;
+        Chat_Form chat_form = null;
+        public static Login_Form instance;
 
-        public Form1()
+        public Login_Form()
         {
             InitializeComponent();
             instance = this;
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
             // Später weg machen nur weil faul
             textBox1.Text = "127.0.0.1";
             textBox2.Text = "9999";
             textBox3.Text = "achi";
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
             ip_address = textBox1.Text;
             port = Int32.Parse(textBox2.Text);
             user_name = textBox3.Text;
@@ -92,15 +92,15 @@ namespace Socket_Chat_Client
             {
                 // Switch from Form1 to Form2
                 this.Hide();
-                if (form == null)
+                if (chat_form == null)
                 {
-                    form = new Form2(socket, user_name);
+                    chat_form = new Chat_Form(socket, user_name);
                 }
-                form.Show();
+                chat_form.Show();
             }
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void Login_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

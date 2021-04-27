@@ -16,25 +16,25 @@ using System.Threading;
 
 namespace Socket_Chat_Client
 {
-    public partial class Form2 : Form
+    public partial class Chat_Form : Form
     {
         String user_name;
         Socket socket;
         String msg = "";
         Thread recv_thread;
-        Form form = null;
+        Login_Form login_form = null;
         const String DC_COMMAND = "/dc";
 
 
-        public Form2(Socket soc, String usr_n)
+        public Chat_Form(Socket soc, String usr_n)
         {
             InitializeComponent();
             socket = soc;
             user_name = usr_n;
         }
 
-
-        private void Form2_Load(object sender, EventArgs e)
+       
+        private void Chat_Form_Load(object sender, EventArgs e)
         {
             send_message(user_name);
 
@@ -131,13 +131,6 @@ namespace Socket_Chat_Client
         }
 
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            close_client_con();
-            Application.Exit();
-        }
-
-
         private void switch_window()
         {
             if (InvokeRequired)
@@ -156,11 +149,11 @@ namespace Socket_Chat_Client
                     this.Hide();
                 }
 
-                if (form == null)
+                if (login_form == null)
                 {
-                    form = new Form1();
+                    login_form = new Login_Form();
                 }
-                form.Show();
+                login_form.Show();
                 close_client_con();
             }
 
@@ -194,6 +187,12 @@ namespace Socket_Chat_Client
                 if (socket != null)
                     socket.Close();
             }
+        }
+
+        private void Chat_Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            close_client_con();
+            Application.Exit();
         }
     }
 }
