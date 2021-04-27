@@ -156,7 +156,6 @@ namespace Socket_Chat_Client
                 login_form.Show();
                 close_client_con();
             }
-
         }
 
 
@@ -188,6 +187,7 @@ namespace Socket_Chat_Client
                     socket.Close();
             }
         }
+
 
         private void Chat_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
