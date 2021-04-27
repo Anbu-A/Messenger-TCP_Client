@@ -28,101 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ip_textbox = new System.Windows.Forms.TextBox();
+            this.login_label = new System.Windows.Forms.Label();
+            this.ip_label = new System.Windows.Forms.Label();
+            this.port_label = new System.Windows.Forms.Label();
+            this.port_textbox = new System.Windows.Forms.TextBox();
+            this.username_label = new System.Windows.Forms.Label();
+            this.username_textbox = new System.Windows.Forms.TextBox();
+            this.connect_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // ip_textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(404, 20);
-            this.textBox1.TabIndex = 0;
+            this.ip_textbox.Location = new System.Drawing.Point(12, 74);
+            this.ip_textbox.Name = "ip_textbox";
+            this.ip_textbox.Size = new System.Drawing.Size(404, 20);
+            this.ip_textbox.TabIndex = 0;
             // 
-            // label1
+            // login_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Login";
+            this.login_label.AutoSize = true;
+            this.login_label.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_label.Location = new System.Drawing.Point(175, 9);
+            this.login_label.Name = "login_label";
+            this.login_label.Size = new System.Drawing.Size(69, 23);
+            this.login_label.TabIndex = 1;
+            this.login_label.Text = "Login";
             // 
-            // label2
+            // ip_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "IP:";
+            this.ip_label.AutoSize = true;
+            this.ip_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ip_label.Location = new System.Drawing.Point(13, 52);
+            this.ip_label.Name = "ip_label";
+            this.ip_label.Size = new System.Drawing.Size(29, 19);
+            this.ip_label.TabIndex = 2;
+            this.ip_label.Text = "IP:";
             // 
-            // label3
+            // port_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 19);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "PORT:";
+            this.port_label.AutoSize = true;
+            this.port_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.port_label.Location = new System.Drawing.Point(13, 116);
+            this.port_label.Name = "port_label";
+            this.port_label.Size = new System.Drawing.Size(55, 19);
+            this.port_label.TabIndex = 3;
+            this.port_label.Text = "PORT:";
             // 
-            // textBox2
+            // port_textbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.port_textbox.Location = new System.Drawing.Point(12, 138);
+            this.port_textbox.Name = "port_textbox";
+            this.port_textbox.Size = new System.Drawing.Size(100, 20);
+            this.port_textbox.TabIndex = 4;
             // 
-            // label4
+            // username_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 202);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Username:";
+            this.username_label.AutoSize = true;
+            this.username_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_label.Location = new System.Drawing.Point(8, 202);
+            this.username_label.Name = "username_label";
+            this.username_label.Size = new System.Drawing.Size(80, 19);
+            this.username_label.TabIndex = 5;
+            this.username_label.Text = "Username:";
             // 
-            // textBox3
+            // username_textbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 224);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.username_textbox.Location = new System.Drawing.Point(12, 224);
+            this.username_textbox.Name = "username_textbox";
+            this.username_textbox.Size = new System.Drawing.Size(100, 20);
+            this.username_textbox.TabIndex = 6;
             // 
-            // button1
+            // connect_button
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(160, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "CONNECT";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.connect_button.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connect_button.Location = new System.Drawing.Point(160, 244);
+            this.connect_button.Name = "connect_button";
+            this.connect_button.Size = new System.Drawing.Size(103, 35);
+            this.connect_button.TabIndex = 7;
+            this.connect_button.Text = "CONNECT";
+            this.connect_button.UseVisualStyleBackColor = true;
+            this.connect_button.Click += new System.EventHandler(this.connect_button_Click);
             // 
             // Login_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 291);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.connect_button);
+            this.Controls.Add(this.username_textbox);
+            this.Controls.Add(this.username_label);
+            this.Controls.Add(this.port_textbox);
+            this.Controls.Add(this.port_label);
+            this.Controls.Add(this.ip_label);
+            this.Controls.Add(this.login_label);
+            this.Controls.Add(this.ip_textbox);
             this.Name = "Login_Form";
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_Form_FormClosed);
@@ -133,13 +133,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ip_textbox;
+        private System.Windows.Forms.Label login_label;
+        private System.Windows.Forms.Label ip_label;
+        private System.Windows.Forms.Label port_label;
+        private System.Windows.Forms.TextBox port_textbox;
+        private System.Windows.Forms.Label username_label;
+        private System.Windows.Forms.TextBox username_textbox;
+        private System.Windows.Forms.Button connect_button;
     }
 }

@@ -23,7 +23,7 @@ namespace Socket_Chat_Client
         String msg = "";
         Thread recv_thread;
         Login_Form login_form = null;
-        const String DC_COMMAND = "/dc";
+        const String dc_command = "/dc";
 
 
         public Chat_Form(Socket soc, String usr_n)
@@ -46,14 +46,14 @@ namespace Socket_Chat_Client
         private delegate void SafeCallDelegate(string text);
         private void write_text_safe(string text)
         {
-            if (textBox2.InvokeRequired)
+            if (chat_textbox.InvokeRequired)
             {
                 var d = new SafeCallDelegate(write_text_safe);
-                textBox2.Invoke(d, new object[] { text });
+                chat_textbox.Invoke(d, new object[] { text });
             }
             else
             {
-                textBox2.Text = text;
+                chat_textbox.Text = text;
             }
         }
 
@@ -113,10 +113,10 @@ namespace Socket_Chat_Client
                 // Credits: https://stackoverflow.com/questions/6290967/stop-the-ding-when-pressing-enter , user: Mawardy
                 e.Handled = true;
 
-                msg = textBox1.Text;
-                textBox2.Text += $"[{user_name}]: {msg}" + Environment.NewLine;
+                msg = input_textbox.Text;
+                chat_textbox.Text += $"[{user_name}]: {msg}" + Environment.NewLine;
 
-                if (msg == DC_COMMAND)
+                if (msg == dc_command)
                 {
                     switch_window();
                 }
@@ -125,7 +125,7 @@ namespace Socket_Chat_Client
                     send_message(msg);
 
                     msg = "";
-                    textBox1.Text = "";
+                    input_textbox.Text = "";
                 }
             }
         }

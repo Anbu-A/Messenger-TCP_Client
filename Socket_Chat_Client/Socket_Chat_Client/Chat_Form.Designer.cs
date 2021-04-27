@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.input_textbox = new System.Windows.Forms.TextBox();
+            this.chat_textbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // input_textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 630);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(368, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.input_textbox.Location = new System.Drawing.Point(12, 630);
+            this.input_textbox.Name = "input_textbox";
+            this.input_textbox.Size = new System.Drawing.Size(368, 20);
+            this.input_textbox.TabIndex = 0;
+            this.input_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox2
+            // chat_textbox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Cornsilk;
-            this.textBox2.Location = new System.Drawing.Point(13, 13);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(367, 611);
-            this.textBox2.TabIndex = 1;
+            this.chat_textbox.BackColor = System.Drawing.Color.Cornsilk;
+            this.chat_textbox.Location = new System.Drawing.Point(13, 13);
+            this.chat_textbox.Multiline = true;
+            this.chat_textbox.Name = "chat_textbox";
+            this.chat_textbox.ReadOnly = true;
+            this.chat_textbox.Size = new System.Drawing.Size(367, 611);
+            this.chat_textbox.TabIndex = 1;
             // 
             // Chat_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 662);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.chat_textbox);
+            this.Controls.Add(this.input_textbox);
             this.Name = "Chat_Form";
             this.Text = "Chatbox";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Chat_Form_FormClosed);
@@ -68,7 +68,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox input_textbox;
+        private System.Windows.Forms.TextBox chat_textbox;
     }
 }
