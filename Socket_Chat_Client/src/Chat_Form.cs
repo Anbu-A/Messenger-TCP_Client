@@ -53,7 +53,7 @@ namespace Socket_Chat_Client
             }
             else
             {
-                chat_textbox.Text = text;
+                chat_textbox.Text += text;
             }
         }
 
@@ -90,7 +90,7 @@ namespace Socket_Chat_Client
                 {
                     if (byte_received != 0)
                     {
-                        msg += Encoding.ASCII.GetString(buffer, 0, byte_received) + Environment.NewLine;
+                        msg = Encoding.ASCII.GetString(buffer, 0, byte_received) + Environment.NewLine;
                         write_text_safe(msg);
                     }
                 }
